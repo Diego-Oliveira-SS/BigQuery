@@ -1,4 +1,5 @@
-import pandas as pd, io, csv
+import pandas as pd
+import io, csv
 from google.cloud import storage
 from google.cloud import bigquery
 from datetime import date
@@ -6,7 +7,7 @@ from dateutil.relativedelta import relativedelta
 
 PROJECT_ID   = "telco-metrics-473116"
 BUCKET_NAME = "telco-metrics-raw"
-DATASET_ID   = "telco_metrics_gold"
+DATASET_ID   = "telco_metrics_curated"
 CUSTOMERS_TB = "customers"
 BILLING_TB   = "billing"
 

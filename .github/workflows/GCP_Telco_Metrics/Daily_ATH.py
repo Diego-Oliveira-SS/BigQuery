@@ -8,7 +8,7 @@ from datetime import date, datetime
 
 PROJECT_ID   = "telco-metrics-473116"
 BUCKET_NAME = "telco-metrics-raw"
-DATASET_ID   = "telco_metrics_gold"
+DATASET_ID   = "telco_metrics_curated"
 CUSTOMERS_TB = "customers"
 ATH_TB       = "ath"
 

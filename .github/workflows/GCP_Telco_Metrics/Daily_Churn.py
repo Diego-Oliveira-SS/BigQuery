@@ -12,7 +12,7 @@ import pandas as pd, pandas_gbq
 # Variáveis (ajustar conforme o projeto)
 PROJECT_ID = "telco-metrics-473116"         # ex.: telco-metrics-473116
 BUCKET_NAME = "telco-metrics-raw"       # ex.: gs://telco-metrics-raw
-DATASET_ID = "telco_metrics_gold"
+DATASET_ID = "telco_metrics_curated"
 CLIENTES_TABLE = "customers"
 CHURN_TABLE = "base_churn"
 BATCH_SIZE = 60

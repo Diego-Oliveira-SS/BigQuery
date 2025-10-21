@@ -7,7 +7,7 @@ from datetime import date
 # Variáveis (Ajustar Conforme o Projeto)
 PROJECT_ID    = "telco-metrics-473116"
 BUCKET_NAME = "telco-metrics-raw"       # ex.: gs://telco-metrics-raw
-DATASET_ID    = "telco_metrics_gold"
+DATASET_ID    = "telco_metrics_curated"
 CUSTOMERS_TB  = "customers"
 BILLING_TB    = "billing"
 PAYMENTS_TB   = "payments"
