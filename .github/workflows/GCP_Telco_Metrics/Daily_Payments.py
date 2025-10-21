@@ -109,12 +109,7 @@ bucket = gcs.bucket(BUCKET_NAME)
 blob = bucket.blob(f"payments/{csv_name}")
 blob.upload_from_string(csv_string, content_type="text/csv")
 
-import logging
-
-logging.basicConfig(level=logging.INFO)
-logging.info(f"Arquivo {csv_name} enviado para {BUCKET_NAME}/payments/")
-
-
+print(f"Arquivo {csv_name} enviado para {BUCKET_NAME}/payments/")
 
 
 

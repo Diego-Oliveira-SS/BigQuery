@@ -3,7 +3,7 @@ from google.cloud import bigquery
 
 def gcs_to_bq_billing(event):
     project_id = "telco-metrics-473116"
-    dataset_id = "telco_metrics_gold"
+    dataset_id = "telco_metrics_curated"
     table_id = "billing"
 
     table_ref = f"{project_id}.{dataset_id}.{table_id}"
