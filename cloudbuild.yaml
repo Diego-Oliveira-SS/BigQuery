@@ -11,5 +11,19 @@ steps:
       - --source=Cloud_Functions       # sua pasta no repo
       - --entry-point=start_workflow
       - --trigger-http
+ 
+  - id: "deploy-cloud-run-storage-to-bigquery"
+    name: "gcr.io/google.com/cloudsdktool/cloud-sdk:slim"
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - storage-to-bigquery-run           # nome do serviço Cloud Run
+      - --region=us-east1
+      - --source=Cloud_Run
+      - --platform=managed
+      - --allow-unauthenticated=false
+
+
 options:
   logging: CLOUD_LOGGING_ONLY
