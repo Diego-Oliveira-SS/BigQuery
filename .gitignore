@@ -1,2 +1,4 @@
 node_modules/
+dataform/node_modules/
+dataform
 .env
